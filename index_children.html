@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>首页</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/iconfont.css" rel="stylesheet"/>
+    <link href="css/pages.css" rel="stylesheet"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+</head>
+<body>
+	<!--下拉刷新容器-->
+    <div id="index_children" class="mui-content mui-scroll-wrapper topm-index">
+        <div class="mui-scroll">
+            <div id="index_slider" class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img alt="" src="images/4.jpg">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img alt="" src="images/1.png">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img alt="" src="images/2.png">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img alt="" src="images/3.png">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img alt="" src="images/4.jpg">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img alt="" src="images/1.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+            <div class="link-btn">
+                <dl class="mui-pull-left">
+                    <a href="javascript:;">
+                        <dt>
+                            <img src="images/link_btn_1.png"/>
+                        <p class='mui-ellipsis'>商城</p>
+                        </dt>
+                    </a>
+                </dl>
+                <dl class="mui-pull-left">
+                    <a href="javascript:;">
+                        <dt>
+                            <img src="images/link_btn_2.png"/>
+                        <p class='mui-ellipsis'>拍卖</p>
+                        </dt>
+                    </a>
+                </dl>
+                <dl class="mui-pull-left">
+                    <a href="javascript:;">
+                        <dt>
+                            <img src="images/link_btn_3.png"/>
+                        <p class='mui-ellipsis'>福袋</p>
+                        </dt>
+                    </a>
+                </dl>
+                <dl class="mui-pull-left">
+                    <a href="javascript:;">
+                        <dt>
+                            <img src="images/link_btn_4.png"/>
+                        <p class='mui-ellipsis'>艺术咨询</p>
+                        </dt>
+                    </a>
+                </dl>
+            </div>
+            <div class="ad">
+                <img src="images/5.png" alt="" width="100%"/>
+            </div>
+            <ul class="mui-table-view p-img" id="first_goods_lists">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="./view/goods_detail.html">
+                        <img class="mui-media-object mui-pull-right"
+                             data-lazyload="images/7.jpg">
+                        <div class="mui-media-body">
+                            <em>幸福</em>
+                            <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="./view/goods_detail.html">
+                        <img class="mui-media-object mui-pull-right"
+                             data-lazyload="images/7.jpg">
+                        <div class="mui-media-body">
+                            <em>幸福</em>
+                            <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="ad">
+                <img src="images/6.png" alt="" width="100%"/>
+            </div>
+            <h1 class="title-info">-&nbsp;&nbsp;精挑细选·名家之作&nbsp;&nbsp;-</h1>
+            <ul class="mui-table-view p-img" id="second_goods_lists">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right"
+                             data-lazyload="images/7.jpg">
+                        <div class="mui-media-body">
+                            <em>幸福</em>
+                            <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                            <div class="goods-price"><span>￥</span><span>399</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right"
+                             data-lazyload="images/7.jpg">
+                        <div class="mui-media-body">
+                            <em>幸福</em>
+                            <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                            <div class="goods-price"><span>￥</span><span>399</span></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <h1 class="title-info">-&nbsp;&nbsp;商品展销 &nbsp;&nbsp;-</h1>
+            <div id="down_load_goods"></div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon mui-icon-star"></span>
+                                <span>收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般,烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon  iconfont icon-ds"></span>
+                                <span>已收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon mui-icon-star"></span>
+                                <span>收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般,烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon  iconfont icon-ds"></span>
+                                <span>已收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon mui-icon-star"></span>
+                                <span>收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般,烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon  iconfont icon-ds"></span>
+                                <span>已收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon mui-icon-star"></span>
+                                <span>收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="goods-lists-d mui-pull-left">
+                <a href="javascript:;">
+                    <dl>
+                        <dt>
+                            <img alt="" data-lazyload="images/9.jpg"
+                                 width="100%">
+                        </dt>
+                        <dd>
+                            <div class=price-d>￥500.00</div>
+                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般,烤炉模式的城，到黄昏，如同打翻的调色盘调色一般.</p>
+                            <a href="javascript:;" class="collect-goods">
+                                <span class="mui-icon  iconfont icon-ds"></span>
+                                <span>已收藏</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div id="up_load_goods"></div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mui.lazyload.js"></script>
+    <script type="text/javascript" src="js/mui.lazyload.img.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+//			var dataJson = ""; //jsonp获取的数据，全局变量
+//			//获取数据,first_goods_lists,second_goods_lists
+//          $.ajax({
+//              type: "get",
+//              dataType: "jsonp",
+//              jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
+//              jsonpCallback: "jsonpcallback",//自定义的jsonp回调函数名称，
+//              //数据返回格式如：jsonpcallback(json数据);
+//              url: "http://172.23.13.22:8089/goods/indexApi",
+//              data: {},//需要传入的参数
+//              timeout:10000,//超时时间设置为10秒；
+//              beforeSend: function(){
+//              $("#first_goods_lists").html('<img class="loading-image" src="images/lazyloading.gif" width="100%" height="120px"/>');
+//              $("#second_goods_lists").html('<img class="loading-image" src="images/lazyloading.gif" width="100%" height="120px"/>');
+//              },//加载前的动画
+//              complete:function(){
+//                  $("#first_goods_lists .loading-image").remove();
+//                  $("#second_goods_lists .loading-image").remove();
+//              },
+//              success: function (data) {
+//              	dataJson = data; //赋值
+//                  //服务器返回响应
+//                  var html_first = '';
+//                  var html_second = '';
+//                  for(var i=0;i < data.length;i++){
+//                      html_first += '<li class="mui-table-view-cell mui-media">'+
+//                              '<a>'+
+//                              '<img class="mui-media-object mui-pull-right" src= "http://172.23.13.22:8089/'+data[i].ident+'">'+
+//                              '<div class="mui-media-body">'+
+//                              '<em>'+data[i].goods_name+'</em>'+
+//                              '<p class="mui-ellipsis">'+data[i].goods_name+'</p>'+
+//                              '</div>'+
+//                              '</a>'+
+//                              '</li>';
+//                      html_second += '<li class="mui-table-view-cell mui-media">'+
+//                              '<a>'+
+//                              '<img class="mui-media-object mui-pull-right" src= "http://172.23.13.22:8089/'+data[i].ident+'">'+
+//                              '<div class="mui-media-body">'+
+//                              '<em>'+data[i].goods_name+'</em>'+
+//                              '<p class="mui-ellipsis">'+data[i].goods_name+'</p>'+
+//                              '<div class="goods-price"><span>￥</span><span>'+parseInt(data[i].price).toFixed(2)+'</span></div>'+
+//                              '</div>'+
+//                              '</a>'+
+//                              '</li>';
+//                  }
+//                  $("#first_goods_lists").html(html_first);
+//                  $("#second_goods_lists").html(html_second);
+//              },
+//              error:function(xhr,type,errorThrown){
+//                  //异常处理；
+//                  mui.toast(type);
+//              }
+//          });
+        mui.init({
+            pullRefresh: {
+                container: '#index_children',
+                down: {
+                    height:50,//可选,默认50.触发下拉刷新拖动距离,
+                    auto: false,//可选,默认false.自动下拉刷新一次
+                    contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+                    contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+                    contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+                    callback: pulldownRefresh
+                },
+                up: {
+                    height:50,//可选.默认50.触发上拉加载拖动距离
+                    auto:false,//可选,默认false.自动上拉加载一次
+                    contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+                    contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                    callback: pullupRefresh
+                }
+            }
+        });
+        /**
+         * 下拉刷新具体业务实现
+         */
+        function pulldownRefresh() {
+            setTimeout(function() {
+                var table = document.body.querySelector('#down_load_goods');
+                //var cells = document.body.querySelectorAll('#up_load_goods');
+                var cells = mui("div.goods-lists-d");
+//              for (var i = cells.length, len = i + 4; i < len; i++) {
+//                  var div = document.createElement('div');
+//                  div.className = 'goods-lists-d mui-pull-left';
+//                  div.innerHTML = '<a href="javascript:;">'+
+//                          '<dl>'+
+//                          '<dt>'+
+//                          '<img alt="" src="http://172.23.13.22:8089/'+dataJson[0].ident+'" width="100%">'+
+//                          '</dt>'+
+//                          '<dd>'+
+//                          '<div class=price-d>￥'+parseInt(dataJson[0].price).toFixed(2)+'</div>'+
+//                          '<p class="mui-ellipsis">'+dataJson[0].goods_name+'</p>'+
+//                          '<a href="javascript:;" class="collect-goods">'+
+//                          '<span class="mui-icon mui-icon-star"></span>'+
+//                          '<span>收藏</span>'+
+//                          '</a>'+
+//                          '</dd>'+
+//                          '</dl>'+
+//                          '</a>';
+//                  //下拉刷新，新纪录插到最前面；
+//                  table.insertBefore(div, table.firstChild);
+//              }
+                mui('#index_children').pullRefresh().endPulldownToRefresh(); //refresh completed
+            }, 1500);
+        }
+        /**
+         * 上拉加载具体业务实现
+         */
+        var count = 0;//上拉次数
+        function pullupRefresh() {
+            setTimeout(function() {
+                mui('#index_children').pullRefresh().endPullupToRefresh((++count > 3)); //参数为true代表没有更多数据了。
+                var table = document.body.querySelector('#up_load_goods');
+                //var cells = document.body.querySelectorAll('#up_load_goods');
+                var cells = mui("div.goods-lists-d");
+//              for (var i = cells.length, len = i + 6; i < len; i++) {
+//                  var div = document.createElement('div');
+//                  div.className = 'goods-lists-d mui-pull-left';
+//                  div.innerHTML = '<a href="javascript:;">'+
+//                          '<dl>'+
+//                          '<dt>'+
+//                          '<img alt="" src="http://172.23.13.22:8089/'+dataJson[0].ident+'" width="100%"/>'+
+//                          '</dt>'+
+//                          '<dd>'+
+//                          '<div class=price-d>￥'+parseInt(dataJson[0].price).toFixed(2)+'</div>'+
+//                          '<p class="mui-ellipsis">'+dataJson[0].goods_name+'</p>'+
+//                          '<a href="javascript:;" class="collect-goods">'+
+//                          '<span class="mui-icon mui-icon-star"></span>'+
+//                          '<span>收藏</span>'+
+//                          '</a>'+
+//                          '</dd>'+
+//                          '</dl>'+
+//                          '</a>';
+//                  table.appendChild(div);
+//              }
+          }, 1500);
+        }
+        //轮播图
+        var gallery = mui("#index_slider");
+        gallery.slider({
+            interval: 3000//自动轮播周期，若为0则不自动播放，默认为0，单位秒；
+        });
+        //商品详情点击监听,跳转
+        mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
+		  //var goods_detail_href = $("a",$(this)).prop("href");//获取href
+		  //传值给详情页面，通知加载新数据
+		  //mui.fire(detail,'getDetail',{id:id});
+			mui.openWindow({
+			    url:'view/goods_detail.html',
+			    id:'goods-detail',
+			    styles:{
+			  //top:newpage-top-position,//新页面顶部位置
+			  //bottom:newage-bottom-position,//新页面底部位置
+			  //width:newpage-width,//新页面宽度，默认为100%
+			  //height:newpage-height,//新页面高度，默认为100%
+			},
+			extras:{
+			  //.....//自定义扩展参数，可以用来处理页面间传值
+			},
+			createNew:false,//是否重复创建同样id的webview，默认为false:不重复创建，直接显示
+			show:{
+			  autoShow:true,//页面loaded事件发生后自动显示，默认为true
+			  //aniShow:animationType,//页面显示动画，默认为”slide-in-right“；
+			  //duration:animationTime//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+			},
+			waiting:{
+			  autoShow:true,//自动显示等待框，默认为true
+			  title:'正在加载...',//等待对话框上显示的提示内容
+			  options:{
+			    //width:waiting-dialog-widht,//等待框背景区域宽度，默认根据内容自动计算合适宽度
+			    //height:waiting-dialog-height,//等待框背景区域高度，默认根据内容自动计算合适高度
+				      }
+				    }
+				})
+			}) 
+			//商品详情点击监听2,跳转
+        	mui("#up_load_goods,#down_load_goods").on('tap','.goods-lists-d',function(){
+		  	//传值给详情页面，通知加载新数据
+		  	//mui.fire(detail,'getDetail',{id:id});
+			mui.openWindow({
+			    url:'view/goods_detail.html',
+			    id:'goods-detail',
+			    styles:{
+			  //top:newpage-top-position,//新页面顶部位置
+			  //bottom:newage-bottom-position,//新页面底部位置
+			  //width:newpage-width,//新页面宽度，默认为100%
+			  //height:newpage-height,//新页面高度，默认为100%
+			},
+			extras:{
+			  //.....//自定义扩展参数，可以用来处理页面间传值
+			},
+			createNew:false,//是否重复创建同样id的webview，默认为false:不重复创建，直接显示
+			show:{
+			  autoShow:true,//页面loaded事件发生后自动显示，默认为true
+			  //aniShow:animationType,//页面显示动画，默认为”slide-in-right“；
+			  //duration:animationTime//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+			},
+			waiting:{
+			  autoShow:true,//自动显示等待框，默认为true
+			  title:'正在加载...',//等待对话框上显示的提示内容
+			  options:{
+			    //width:waiting-dialog-widht,//等待框背景区域宽度，默认根据内容自动计算合适宽度
+			    //height:waiting-dialog-height,//等待框背景区域高度，默认根据内容自动计算合适高度
+				      }
+				    }
+				})
+			}) 
+</script>
+</body>
+</html>

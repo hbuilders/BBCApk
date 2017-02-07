@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品详情</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link href="../css/iconfont.css" rel="stylesheet"/>
+    <link href="../css/pages.css" rel="stylesheet"/>
+    <link href="../css/reset.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">商品详情</h1>
+        <a href="javascript:;" style="float: right;"><span class="mui-icon mui-icon-home"></span></a>
+    </header>
+    <div class="mui-content" id="goods-detail-content">
+        <div id="slider" class="mui-slider">
+            <div id="sliderSegmentedControl"
+                 class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item mui-active" href="#goods">商品</a>
+                <a class="mui-control-item" href="#goodsDetail">详情</a>
+                <a class="mui-control-item" href="#evaluate">评价</a>
+            </div>
+            <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+            <div class="mui-slider-group">
+                <!--商品 START-->
+                <div id="goods" class="mui-slider-item mui-control-content mui-active">
+                    <div id="scroll1" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!--商品轮播图-->
+                            <div id="goodsSlider" class="mui-slider">
+                                <div class="mui-slider-group mui-slider-loop">
+                                    <!--支持循环，需要重复图片节点-->
+                                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                                                    src="../images/3.png"/></a></div>
+                                    <div class="mui-slider-item"><a href="#"><img
+                                                    src="../images/1.png"/></a></div>
+                                    <div class="mui-slider-item"><a href="#"><img
+                                                    src="../images/2.png"/></a></div>
+                                    <div class="mui-slider-item"><a href="#"><img
+                                                    src="../images/3.png"/></a></div>
+                                    <!--支持循环，需要重复图片节点-->
+                                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                                                    src="../images/1.png"/></a></div>
+                                </div>
+                                <div class="mui-slider-indicator">
+                                    <div class="mui-indicator mui-active"></div>
+                                    <div class="mui-indicator"></div>
+                                    <div class="mui-indicator"></div>
+                                </div>
+                            </div>
+                            <div class="goods-info">
+                                <span class="goods-name">玉然本翠雕刻艺术翡翠专场-桃心玉最好的玉石</span><br/>
+                                价格&nbsp;&nbsp;<span class="price">￥200</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                库存&nbsp;&nbsp;2件
+                            </div>
+                            <div class="l-blank"></div>
+                            <div class="goods-prop">
+                                <label>颜色</label>
+                                <img src="../images/8.jpg"/>
+                            </div>
+                            <div class="m-blank"></div>
+                            <div class="goods-prop">
+                                <label>尺码</label>
+                                <span class="prop-value">S</span>
+                                <span class="prop-value">M</span>
+                                <span class="prop-value active">L</span>
+                                <span class="prop-value">XL</span>
+                            </div>
+                            <div class="s-blank"></div>
+                            <div class="goods-prop">
+                                <label>规格</label>
+                                <span class="prop-value active">8*188mm</span>
+                                <span class="prop-value">10*188mm</span>
+                            </div>
+                            <div class="s-blank"></div>
+                            <div class="buy-btn">
+                                <button class="mui-btn mui-btn-danger mui-btn-outlined">加入购物车</button>
+                                <button class="mui-btn mui-btn-danger">立即购买</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--商品 END-->
+                <!--详情 START-->
+                <div id="goodsDetail" class="mui-slider-item mui-control-content">
+                    <div id="scroll2" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">商品规格</a>
+                                    <div class="mui-collapse-content">
+                                        <h5> 杆身：铁木杆</h5>
+                                        <h5> 产地：日本</h5>
+                                        <h5> 杆面角度：0.5</h5>
+                                        <h5> 球杆长度：43</h5>
+                                        <h5> 杆身重量：40</h5>
+                                    </div>
+                                </li>
+                                <li class="goods-info-img">
+                                    <img src="../images/1.png"/>
+                                    <img src="../images/2.png"/>
+                                    <img src="../images/3.png"/>
+                                    <img src="../images/4.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--详情 END-->
+                <!--评价 START-->
+                <div id="evaluate" class="mui-slider-item mui-control-content">
+                    <div id="scroll3" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!--<div class="mui-loading">-->
+                                <!--<div class="mui-spinner">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div id="goods_comments" class="goods-comments">
+                                <div class="comment-btn-lists">
+                                    <div class="mui-pull-left comment-active">全部(13)</div>
+                                    <div class="mui-pull-left">好评(9)</div>
+                                    <div class="mui-pull-left">中评(2)</div>
+                                    <div class="mui-pull-left">差评(13)</div>
+                                </div>
+                                <ul class="mui-table-view" style="clear:both;">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"
+                                                 src="../images/8.jpg">
+                                            <div class="mui-media-body">
+							                    <span class="custom-name">老顽童</span>
+                                                <div class="comment-time mui-pull-right">2016-12-12</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <p>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
+                                        <div class="mui-pull-left comment-stars">
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="mui-table-view" style="clear:both;">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"
+                                                 src="../images/8.jpg">
+                                            <div class="mui-media-body">
+							                    <span class="custom-name">老顽童</span>
+                                                <div class="comment-time mui-pull-right">2016-12-12</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <p>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
+                                        <div class="mui-pull-left comment-stars">
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="mui-table-view" style="clear:both;">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"
+                                                 src="../images/8.jpg">
+                                            <div class="mui-media-body">
+							<span class="custom-name">老顽童</span>
+                                <div class="comment-time mui-pull-right">2016-12-12</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <p>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
+                                        <div class="mui-pull-left comment-stars">
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="mui-table-view" style="clear:both;">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"
+                                                 src="../images/8.jpg">
+                                            <div class="mui-media-body">
+							                    <span class="custom-name">老顽童</span>
+                                                <div class="comment-time mui-pull-right">2016-12-12</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <p>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖</p>
+                                        <div class="mui-pull-left comment-stars">
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds red"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                            <span class="mui-icon  iconfont icon-ds white"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--评价 END-->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/mui.min.js"></script>
+    <script type="text/javascript" src="../js/mui.lazyload.js"></script>
+    <script type="text/javascript" src="../js/mui.lazyload.img.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+    	(function ($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: false //是否显示滚动条
+            });
+            var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+            $('.mui-input-group').on('change', 'input', function () {
+                if (this.checked) {
+                    sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                    //force repaint
+                    sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+                }
+            });
+        })(mui);
+
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        var slider2 = mui("#goodsSlider");
+        slider2.slider({
+            interval: 2000
+        });
+
+        /* 点击商品属性 */
+        var propVal = $(".goods-prop .prop-value");
+        propVal.each(function (i, pv) {
+            pv.addEventListener('tap', function () {
+                $(this).siblings("span").removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+    </script>
+</body>
+</html>

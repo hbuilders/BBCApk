@@ -1,0 +1,49 @@
+{
+  "index_children.html": {
+    "href": "index_children.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/iconfont.css",
+      "css/pages.css",
+      "css/reset.css",
+      "js/mui.min.js",
+      "js/mui.lazyload.js",
+      "js/mui.lazyload.img.js",
+      "js/common.js",
+      "images/9.jpg",
+      "images/5.png",
+      "images/6.png",
+      "images/7.jpg",
+      "images/8.jpg",
+      "images/4.jpg",
+      "images/1.png",
+      "images/2.png",
+      "images/3.png",
+      "images/link_btn_1.png",
+      "images/link_btn_2.png",
+      "images/link_btn_3.png",
+      "images/link_btn_4.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/iconfont.css",
+      "css/pages.css",
+      "css/reset.css",
+      "js/mui.min.js",
+      "js/mui.lazyload.js",
+      "js/mui.lazyload.img.js",
+      "js/common.js",
+      "images/lazyloading.gif",
+      "images/index_logo.png"
+    ],
+    "refer": [
+      "index_children.html"
+    ],
+    "priority": 0
+  }
+}

@@ -1,0 +1,256 @@
+/*topm各个页面的CSS*/
+/*----------common start------*/
+/*----------common end--------*/
+
+/*----------index start--------*/
+.index-logo{
+	width: 20%;
+	max-width: 140px;
+	height: 30px;
+	margin-top: 6px;
+}
+.index-search .mui-input-row{
+	clear:none;
+}
+.index-search .mui-search{
+	float: left;
+	width: 100%;
+	margin: 2px 0px 0px 30px;
+}
+.index-search .mui-search .mui-placeholder .mui-icon-search{
+	float: right;
+	margin-right: 0px;
+}
+.index-search .mui-search .mui-placeholder span:nth-child(2){
+	float: left;
+	margin: 4px 0px 0px 10px;
+}
+.index-search input[type=search]{
+	background-color: #fff;
+}
+.index-search .category-icon{
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.topm-index #index_slider{
+	max-height: 180px;
+}
+.topm-index .link-btn dl{
+	width: 25%;
+    margin: 10px auto;
+}
+.topm-index .link-btn dt{
+    text-align: center;
+}
+.topm-index .link-btn dt p{
+	color:#333333;
+    margin-bottom: 0;
+}
+.topm-index .p-img li{
+	float:left;
+    width: 50%;
+}
+
+.topm-index .mui-table-view .mui-media-object{
+	width: 60px;
+	height: 80px;
+}
+
+.topm-index .mui-table-view .mui-table-view-cell .mui-media-body em{
+	font-weight: bold;
+}
+
+.topm-index .p-img li:nth-of-type(odd){
+	border-right:1px solid #e8e8e8;
+}
+.topm-index .p-img:before{
+	height:0px;
+}
+.topm-index .p-img .mui-table-view-cell:after{
+	left: 0px;
+    height: 2px;
+	background-color: #e8e8e8;
+}
+.topm-index .goods-price{
+	color:#e52129;
+}
+.topm-index .goods-price span:first-child{
+	font-size: 13px;
+}
+.topm-index .title-info{
+	clear: both;
+	font-size: 17px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.topm-index .goods-lists-d{
+	width:50%;
+}
+.topm-index .goods-lists-d dl{
+    margin: 0;
+    border-top: 1px solid #e8e8e8;
+	padding: 4px 2px;
+}
+
+.topm-index .goods-lists-d dd{
+	margin: 0;
+}
+.topm-index .goods-lists-d dd .price-d{
+    color: white;
+    margin-top: -35px;
+    line-height: 20px;
+    text-align: left;
+    padding: 5px 5px;
+	min-width: 150px;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+	}
+.topm-index .goods-lists-d dd p{
+	color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 5px 0;
+}
+.topm-index .goods-lists-d dt img{
+	min-width: 150px;
+	min-height: 150px;
+}
+.topm-index .goods-lists-d .collect-goods .mui-icon{
+	font-size: 20px;
+}
+.topm-index .goods-lists-d .collect-goods{
+	font-size: 14px;
+	color:#f99d37;
+}
+.topm-index #up_load_goods,.topm-index #down_load_goods{
+	padding: 0px 2px;
+}
+/*----------index end--------*/
+
+/*-----------商品详情 start----------*/
+#goods-detail-content .mui-control-content {
+	background-color: white;
+	/*min-height: 653px;*/
+}
+#goods{
+	min-height: 653px;
+}
+#goods-detail-content .mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+#goods-detail-content #goodsSlider img{
+	height: 200px;
+}
+.clear{
+	clear: both;
+}
+#goods-detail-content .goods-info,#goods-detail-content .goods-prop{
+	padding: 10px;
+}
+#goods-detail-content .goods-name{
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+#goods-detail-content .price{
+	color: red;
+}
+#goods-detail-content .l-blank{
+	height: 8px;
+	background-color: #EEE;
+}
+#goods-detail-content .m-blank{
+	height: 5px;
+	background-color: #EEE;
+}
+#goods-detail-content .s-blank{
+	height: 1px;
+	background-color: #EEE;
+}
+#goods-detail-content .goods-prop img{
+	width: 40px;
+	height: 40px;
+	border:1px #000 solid;
+}
+#goods-detail-content .goods-prop label{
+	display: block;
+	padding-bottom: 10px;
+}
+#goods-detail-content .goods-prop span{
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #ECECEC;
+}
+#goods-detail-content .goods-prop span.active{
+	color: #FFF;
+	background-color: #020202;
+}
+#goods-detail-content .buy-btn{
+	padding: 8px;
+	text-align: center;
+}
+#goods-detail-content .buy-btn button{
+	width: 45%;
+}
+.goods-info-img{
+	padding: 10px;
+}
+/*商品评价*/
+.comment-btn-lists{
+    width: 100%;
+    height: 50px;
+	background-color: #fff;
+}
+.comment-btn-lists div{
+	width: 20%;
+	font-size: 14px;
+    max-width: 80px;
+	text-align: center;
+    margin: 10px 0 10px 10px;
+	padding: 5px 5px;
+	background-color: #ccc;
+}
+.comment-btn-lists .comment-active{
+	color: white;
+	background-color: #333333;
+}
+.goods-comments .mui-table-view .mui-media-object{
+	border-radius: 20px;
+}
+.goods-comments .mui-table-view .mui-media-body{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.goods-comments .comment-stars .red{
+	color: #fd252e;
+}
+.goods-comments .comment-stars .white{
+	color: #ccc;;
+}
+.goods-comments .mui-table-view-cell p{
+	color: #333333
+}
+.goods-comments .mui-table-view:before{
+	height: 1px !important;
+}
+/*-----------商品详情 end----------*/
+
+/*-----------分类 start----------*/
+.category-search .mui-input-row{
+	clear: none;
+	float: left;
+	width: 80%;
+	margin: 2px 5px;
+}
+/*-----------分类 end----------*/
+

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单列表</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link href="../css/iconfont.css" rel="stylesheet"/>
+    <link href="../css/pages.css" rel="stylesheet"/>
+    <link href="../css/reset.css" rel="stylesheet"/>
+    <style>
+        .mui-card .mui-control-content {
+            padding: 10px;
+        }
+        .mui-control-content {
+            height: 150px;
+        }
+        .one_ul_li{
+
+        }
+        .mui-scroll-wrapper{
+            height: 620px;
+        }
+        .title {
+            color: #6d6d72;
+            font-size: 15px;
+        }
+        body{
+            font-size: 14px;
+        }
+        #order_detail .mui-table-view .mui-table-view-cell p{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">我的订单</h1>
+        <a href="javascript:;" style="float: right;"><span class="mui-icon mui-icon-home"></span></a>
+    </header>
+    <div style="text-indent: 10px; height:0px; line-height: 50px; margin-top: 50px;">
+        <div id="segmentedControl" class=" mui-segmented-control mui-segmented-control-inverted ">
+            <a class="mui-control-item mui-active" href="#item1">
+                全部
+            </a>
+            <a class="mui-control-item" href="#item2">
+                待支付
+            </a>
+            <a class="mui-control-item" href="#item3">
+                待发货
+            </a>
+            <a class="mui-control-item" href="#item3">
+                待收货
+            </a>
+            <a class="mui-control-item" href="#item3">
+                待评价
+            </a>
+        </div>
+    </div>
+    <div class="mui-content">
+        <div id="order_detail">
+        <div id="item1" class="mui-control-content mui-active">
+            <div id="pullrefresh" class="mui-scroll-wrapper">
+                <div class="mui-scroll " id="pullrefresh_child">
+                    <ul class="mui-table-view" id="one_ul">
+                        <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                            <div class="title" style="margin-bottom: 5px">
+                                <div style="float: right">
+                                    <span style="color: red">待支付</span>
+                                </div>
+                                <div>
+                                    <span>订单号：1234567890</span>
+                                </div>
+
+                            </div>
+                            <div>
+                                <ul class="mui-table-view">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div style="float: right">
+                                <div style="margin: 3px">
+                                    <span>共计</span><span style="color: red">3</span><span>件商品</span>
+                                    <span>合计：<span style="color: red">￥34556</span></span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <button id='confirmBtn' type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                        取消订单
+                                    </button>
+                                    <button type="button" class="mui-btn mui-btn-danger">
+                                        立即支付
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                            <div style="margin-bottom: 5px">
+                                <div style="float: right">
+                                    <span style="color: red">待支付</span>
+                                </div>
+                                <div>
+                                    <span>订单号：1234567890</span>
+                                </div>
+
+                            </div>
+                            <div>
+                                <ul class="mui-table-view">
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mui-table-view-cell mui-media">
+                                        <a href="javascript:;">
+                                            <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                            <div class="mui-media-body">
+                                                <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                                <h5>规格：200*230cm</h5>
+                                                <div >
+                                                    <h5 style="float: right;color: red">￥200</h5>
+                                                    <div ><span class="mui-h5">数量：1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div style="float: right">
+                                <div style="margin: 3px">
+                                    <span>共计</span><span style="color: red">3</span><span>件商品</span>
+                                    <span>合计：<span style="color: red">￥34556</span></span>
+                                </div>
+                                <div style="text-align:center;">
+                                    <button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                        取消订单
+                                    </button>
+                                    <button type="button" class="mui-btn mui-btn-danger">
+                                        立即支付
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="item2" class="mui-control-content">
+            <div class="mui-scroll">
+                <ul class="mui-table-view" id="one_ul">
+                    <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                        <div class="title" style="margin-bottom: 5px">
+                            <div style="float: right">
+                                <span style="color: red">待支付</span>
+                            </div>
+                            <div>
+                                <span>订单号：1234567890</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="float: right">
+                            <div style="margin: 3px">
+                                <span>共计</span><span style="color: red">2</span><span>件商品</span>
+                                <span>合计：<span style="color: red">￥34556</span></span>
+                            </div>
+                            <div style="text-align:center;">
+                                <button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                    取消订单
+                                </button>
+                                <button type="button" class="mui-btn mui-btn-danger">
+                                    立即支付
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                        <div style="margin-bottom: 5px">
+                            <div style="float: right">
+                                <span style="color: red">待支付</span>
+                            </div>
+                            <div>
+                                <span>订单号：1234567890</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div style="float: right">
+                            <div style="margin: 3px">
+                                <span>共计</span><span style="color: red">3</span><span>件商品</span>
+                                <span>合计：<span style="color: red">￥34556</span></span>
+                            </div>
+                            <div style="text-align:center;">
+                                <button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                    取消订单
+                                </button>
+                                <button type="button" class="mui-btn mui-btn-danger">
+                                    立即支付
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="item3" class="mui-control-content">
+            <div class="mui-scroll">
+                <ul class="mui-table-view" id="one_ul">
+                    <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                        <div class="title" style="margin-bottom: 5px">
+                            <div style="float: right">
+                                <span style="color: red">待支付</span>
+                            </div>
+                            <div>
+                                <span>订单号：1234567890</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div style="float: right">
+                            <div style="margin: 3px">
+                                <span>共计</span><span style="color: red">3</span><span>件商品</span>
+                                <span>合计：<span style="color: red">￥34556</span></span>
+                            </div>
+                            <div style="text-align:center;">
+                                <button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                    取消订单
+                                </button>
+                                <button type="button" class="mui-btn mui-btn-danger">
+                                    立即支付
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mui-bar-nav mui-table-view-cell one_ul_li">
+                        <div style="margin-bottom: 5px">
+                            <div style="float: right">
+                                <span style="color: red">待支付</span>
+                            </div>
+                            <div>
+                                <span>订单号：1234567890</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">
+                                        <div class="mui-media-body">
+                                            <p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>
+                                            <h5>规格：200*230cm</h5>
+                                            <div >
+                                                <h5 style="float: right;color: red">￥200</h5>
+                                                <div ><span class="mui-h5">数量：1</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div style="float: right">
+                            <div style="margin: 3px">
+                                <span>共计</span><span style="color: red">3</span><span>件商品</span>
+                                <span>合计：<span style="color: red">￥34556</span></span>
+                            </div>
+                            <div style="text-align:center;">
+                                <button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">
+                                    取消订单
+                                </button>
+                                <button type="button" class="mui-btn mui-btn-danger">
+                                    立即支付
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/mui.js"></script>
+    <script type="text/javascript" src="../js/mui.lazyload.js"></script>
+    <script type="text/javascript" src="../js/mui.lazyload.img.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+    	mui.init({
+            swipeBack:true ,//启用右滑关闭功能
+            pullRefresh: {
+                container: '#pullrefresh',
+                down: {
+                    height:50,//可选.默认50.触发上拉加载拖动距离
+                    callback: pulldownRefresh
+                },
+                up: {
+                    height:50,//可选.默认50.触发上拉加载拖动距离
+                    auto:false,//可选,默认false.自动上拉加载一次
+                    contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+                    contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+                    callback: pullupRefresh
+                }
+            }
+        });
+        /**
+         * 下拉刷新具体业务实现
+         */
+        function pulldownRefresh() {
+            setTimeout(function() {
+                mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+            }, 1500);
+        }
+        var count = 0;
+        /**
+         * 上拉加载具体业务实现
+         */
+        function pullupRefresh() {
+            setTimeout(function() {
+                mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+                var table = document.body.querySelector('.mui-table-view');
+                var cells = document.body.querySelectorAll('.mui-table-view-cell');
+                for (var i = cells.length, len = i + 5; i < len; i++) {
+                    var li = document.createElement('li');
+                    li.className = 'mui-bar-nav mui-table-view-cell';
+                    li.innerHTML =
+                            '<div style="margin-bottom: 5px">'+
+                            '<div style="float: right">' +
+                            '<span style="color: red">待支付</span>'+
+                            '</div>'+
+                            '<div>'+
+                            '<span>订单号：1234567890</span>' +
+                            '</div>'+
+                            '</div>'+
+                            '<div>'+
+                            '<ul class="mui-table-view">'+
+                            '<li class="mui-table-view-cell mui-media">'+
+                            '<a href="javascript:;">'+
+                            '<img class="mui-media-object mui-pull-left"  style="max-width: 65px;height: 65px;width: 65px" src="../images/8.jpg">'+
+                            '<div class="mui-media-body">'+
+                            '<p class="mui-ellipsis">LOVO 罗莱公司出品 轻柔磨毛90%白鸭绒被3代 200*230cm</p>'+
+                            '<h5>规格：200*230cm</h5>'+
+                            '<div >'+
+                            '<h5 style="float: right;color: red">￥200</h5>'+
+                            '<div ><span class="mui-h5">数量：1</span></div>'+
+                            '</div>'+
+                            '</div>'+
+                            '</a>'+
+                            '</li>'+
+                            '</ul>'+
+                            '</div>'+
+                            '<div style="float: right">'+
+                            '<div style="margin: 3px">'+
+                            '<span>共计</span><span style="color: red">1</span><span>件商品</span>'+
+                            '<span>合计：<span style="color: red">￥200</span></span>'+
+                            '</div>'+
+                            '<div style="text-align:center;">'+
+                            '<button type="button" class="mui-btn mui-btn-warning" style="background-color: dimgray;">'+
+                            '取消订单'+
+                            '</button>'+
+                            '<button type="button" class="mui-btn mui-btn-danger">'+
+                            '立即支付'+
+                            '</button>'+
+                            '</div>'+
+                            '</div>'
+                    table.appendChild(li);
+                }
+            }, 1500);
+        }
+        /**
+         * 取消订单提示实现
+         */
+        document.getElementById("confirmBtn").addEventListener('tap', function() {
+            var btnArray = ['否', '是'];
+            mui.confirm('取消订单，确认？', '取消订单', btnArray, function(e) {
+                if (e.index == 1) {
+                } else {
+                }
+            })
+        });
+        /**
+         * 是否显示滚动条
+         */
+        (function($) {
+            $('#pullrefresh').scroll({
+                indicators: false //是否显示滚动条
+            });
+        })(mui);
+    </script>
+</body>
+</html>
